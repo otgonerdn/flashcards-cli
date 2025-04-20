@@ -1,0 +1,58 @@
+.main-content {
+    display: flex;
+    padding: 32px;
+}
+.sidebar {
+    width: 25%;
+}
+.sidebar p {
+    margin-bottom: 16px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.content {
+    width: 75%;
+}
+.section {
+    margin-bottom: 32px;
+}
+.section h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.section p {
+    color: #888;
+}
+.section a {
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: underline;
+    color: #000;
+}
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.details-section h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.details-section p {
+    margin-bottom: 8px;
+}
+.details-section a {
+    text-decoration: underline;
+    color: #000;
+}

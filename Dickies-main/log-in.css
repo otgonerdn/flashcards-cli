@@ -1,0 +1,148 @@
+.center-container {
+    /* Хэрэв улаан хүрээ, өөр стилистик шаардлагагүй бол дэлгэц дүүрэн харагдахаар тохируулна */
+    margin:-1%;
+    height: 99vh;
+    background-color: #ffffff;
+    
+    /* Дотор агуулгыг босоо болон хөндлөн чиглэлд төвлөрүүлэх flex */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* Зураг дээр зүүн талд эхэлж буй тул flex-start */
+    justify-content: flex-start; 
+    
+    /* Дотор талын зай (padding) */
+    padding: 40px 30px;
+    box-sizing: border-box;
+    border-radius: 0px; /* Хүсвэл өргөнийг багасгаж/ихэсгэж болно */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    /* box-shadow, radius хийх шаардлагатай бол доор нэмэж болно.
+       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+       border-radius: 4px;
+     */
+  }
+
+  /* ===== 2. ГАРЧИГ (MY ACCOUNT) ===== */
+  .heading {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  /* ===== 3. ТАБ ХЭСЭГ (LOG IN | CREATE ACCOUNT) ===== */
+  .tabs {
+    display: flex;
+    gap: 20px; /* Табуудын хоорондын зай */
+    padding-bottom: 20px;
+  }
+  .tab {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    color: #000;
+  }
+  /* Зураг дээр Log In идэвхтэй буюу доор нь бараан хүрээтэй */
+  .tab.active {
+    border-bottom: 2px solid #000;
+  }
+  .tab:hover {
+    text-decoration: underline;
+  }
+
+  /* ===== 4. ФОРМЫН ҮНДСЭН КОНТЕЙНЕР ===== */
+  .form-container {
+    background: #fff;
+    /* Зураг дээр бүхэлдээ цагаан фон */
+  }
+
+  /* ФОРМ ТАЛБАР БҮР (Email, Password г.м) */
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    min-width: 680px; /* Формын өргөн */
+  }
+  .form-field label {
+    font-size: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+  }
+  /* Зураг дээр талбарууд улаан хүрээтэй, болзошгүй алдааны үед */
+  .form-field input {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc; /* Энгийн үед саарал */
+    border-radius: 4px;
+  }
+  /* Алдаатай талбарын үед (угаасаа улаанаар харагдаж байна) */
+  .form-field.error input {
+    border-color: #353535; /* улаан өнгө */
+  }
+  .error-msg {
+    color: #353535;
+    font-size: 14px;
+    padding-top: 5px;
+  }
+
+  /* Password талбарт Show товч бий (inline button) */
+  .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .input-wrapper input {
+    flex: 1;
+  }
+  .show-btn {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+  }
+
+  /* ===== 5. CHECKBOX + REMEMBER ME + FORGOT LINK ===== */
+  .options-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    gap: 10px;
+  }
+  .options-row input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  .options-row label {
+    margin-right: auto; /* label-ийг зүүнд, линкүүдыг баруунд байрлуулна */
+    cursor: pointer;
+  }
+  .forgot-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+  }
+  .forgot-link:hover {
+    text-decoration: underline;
+  }
+
+  /* ===== 6. LOG IN ТОВЧ ===== */
+  .btn-create {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn-create:hover {
+    background-color: #333;
+  }

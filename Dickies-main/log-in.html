@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цэнрлэгдсэн Контейнер</title>
+  <link rel="stylesheet" href="log-in.css">
+  <style>
+  </style>
+</head>
+<body>
+  <!-- ГОЛ ХЭСЭГ -->
+  <div class="center-container">
+    <!-- Гарчиг -->
+    <div class="heading">My Account</div>
+    
+    <!-- Таб хэсэг -->
+    <div class="tabs">
+      <!-- Log In табыг идэвхтэй байлгахын тулд .active класс нэмсэн -->
+      <button class="tab active">Log In</button>
+      <a href="create-acc.html"><button class="tab">Create Account</button></a>
+    </div>
+
+    <!-- ФОРМ -->
+    <div class="form-container">
+      
+      <!-- Email талбар (алдааны жишээтэй) -->
+      <div class="form-field error">
+        <label for="email">Username</label>
+        <input type="text" id="email" placeholder="Username *">
+      </div>
+
+      <!-- Password талбар (алдааны жишээтэй) + Show товч -->
+      <div class="form-field error">
+        <label for="password">Password</label>
+        <div class="input-wrapper">
+          <input type="password" id="password" placeholder="Password *">
+          <button type="button" class="show-btn">Show</button>
+        </div>
+      </div>
+
+      <!-- Remember Me + Forgot link зэрэгцээ байрлалтай -->
+      <div class="options-row">
+        <input type="checkbox" id="rememberMe" />
+        <label for="rememberMe">Remember Me</label>
+        <a href="#" class="forgot-link">Forgot your password?</a>
+      </div>
+
+      <!-- Log In товч -->
+      <button id="loginBtn" class="btn-create">Log In</button>
+      <p id="errMsg" style="color: red; display: none; margin-top: 10px;">Нууц үг эсвэл нэр буруу байна</p>
+    </div>
+  </div>
+
+  <!-- Хүсвэл энд footer, script гэх мэт зүйлсээ үргэлжлүүлнэ -->
+  
+  <!-- Password Show/Hide жишээ скрипт -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const loginBtn    = document.getElementById('loginBtn');
+      const errMsg      = document.getElementById('errMsg');
+      const showBtn     = document.querySelector('.show-btn');
+      const emailField  = document.getElementById('email');
+      const passField   = document.getElementById('password');
+    
+      if (!loginBtn || !showBtn || !emailField || !passField) return;
+    
+      // Алдааны мессежийг нуух (retry үед)
+      [emailField, passField].forEach(field =>
+        field.addEventListener('input', () => {
+          errMsg.style.display = 'none';
+        })
+      );
+    
+      // Login шалгалт→parent-д мессеж
+      loginBtn.addEventListener('click', () => {
+        const user = emailField.value.trim();
+        const pass = passField.value.trim();
+    
+        if (user === 'admin' && pass === '123') {
+          window.parent.postMessage(
+            { action: 'loginSuccess' },
+            'http://127.0.0.1:5500/Home.html#'  // өөрийн домэйнаа бич
+          );
+        } else {
+          errMsg.style.display = 'block';
+        }
+      });
+    
+      // Show/Hide password
+      showBtn.addEventListener('click', () => {
+        if (passField.type === 'password') {
+          passField.type = 'text';
+          showBtn.textContent = 'Hide';
+        } else {
+          passField.type = 'password';
+          showBtn.textContent = 'Show';
+        }
+      });
+    });
+    </script>    
+</body>
+</html>

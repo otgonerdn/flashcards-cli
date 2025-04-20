@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цэнрлэгдсэн Контейнер</title>
+  <link rel="stylesheet" href="create-style.css">
+  <style>
+  </style>
+</head>
+<body>
+  <div class="center-container">
+        <!-- Гарчиг (My Account) -->
+        <div class="heading">My Account</div>
+    
+        <!-- Логин / бүртгэл хийх таб хэсэг -->
+        <div class="tabs">
+          <a href="log-in.html"><button class="tab">Log In</button></a>
+          <button class="tab" style="border-bottom: 2px solid #000;">Create Account</button>
+        </div>
+    
+        <!-- Форм бүхий хэсэг -->
+        <div class="form-container">
+          <!-- Нэр -->
+          <div class="form-field">
+            <input type="text" id="fname" name="fname" placeholder="First Name *" required>
+          </div>
+    
+          <!-- Овог -->
+          <div class="form-field">
+            <input type="text" id="lname" name="lname" placeholder="Last Name *" required>
+          </div>
+    
+          <!-- Утасны дугаар -->
+          <div class="form-field">
+            <label>Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="(976) 85586276 *" required>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">I agree to receive texts about my order and offerings from Dickies.</label>
+          </div>
+    
+          <!-- Имэйл -->
+          <div class="form-field">
+            <input type="email" id="email" name="email" placeholder="Email *" required>
+          </div>
+    
+          <!-- Имэйл баталгаажуулах -->
+          <div class="form-field">
+            <input type="email" id="confirm-email" name="confirm-email" placeholder="confirm-email *" required>
+          </div>
+    
+          <!-- Нууц үг -->
+          <div class="form-field">
+            <input type="password" id="password" name="password" placeholder="Enter your password *" required>
+          </div>
+    
+          <!-- Нууц үг баталгаажуулах -->
+          <div class="form-field">
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password *" required>
+          </div>
+    
+          <!-- Хүссэн бол checkbox-уудыг ингэж тохируулж болно -->
+          <div class="checkbox-group">
+            <input type="checkbox" id="offers" name="offers">
+            <label for="offers">Please send me emails with offers and product news from Dickies.</label>
+          </div>
+    
+          <div class="checkbox-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the Dickies website Terms of Use.</label>
+          </div>
+    
+          <div class="checkbox-group">
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">I agree to the use of my information in accordance with the Privacy Policy.</label>
+          </div>
+    
+          <!-- Бүртгэл үүсгэх товч -->
+          <button type="submit" class="btn-create">Create Account</button>
+        </div>
+    
+  </div>
+</body>
+</html>

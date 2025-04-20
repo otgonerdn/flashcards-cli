@@ -1,0 +1,117 @@
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 10px 40px;
+  }
+  .logo {
+    width: 45px;
+    margin-right: 20px;
+  }
+  .nav1 {
+    display: flex;
+    gap: 20px;
+    font-size: 15px
+    
+  }
+  .nav1 a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .nav1 a.sale {
+    color: #c00;
+  }
+  .search-cart {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .search-box {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .container1 {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    margin-bottom: 10%;
+  }
+  .sidebar1 {
+    padding-right: 70px;
+  }
+  .sidebar1 .welcome {
+    font-size: 15px;
+    margin-bottom: 18px;
+    color: #222;
+  }
+  .sidebar1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar1 ul li {
+    margin-bottom: 10px;
+  }
+  .sidebar1 ul li a,
+  .sidebar1 ul li {
+    color: #444;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+  .sidebar1 .logout {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+  }
+  .content {
+    flex: 1;
+    padding-left: 40px;
+    
+  }
+  .content h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  .content .desc {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+  .add-payment {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #444;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+  .add-payment .plus {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  @media (max-width: 900px) {
+    .container1 {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+    .sidebar1 {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #eee;
+      padding-right: 0;
+      margin-bottom: 18px;
+    }
+    .main-content {
+      padding-left: 0;
+    }
+  }

@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .workwear-finder {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    margin-bottom: 40px;
+  }
+  
+  .finder-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .finder-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .finder-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 30px;
+  }
+  
+  .finder-step {
+    margin-bottom: 30px;
+  }
+  
+  .step-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .step-number {
+    background-color: #000;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  .step-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .option-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .option-card {
+    border: 2px solid #eee;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .option-card:hover {
+    border-color: #000;
+    transform: translateY(-3px);
+  }
+  
+  .option-card.selected {
+    border-color: #000;
+    background-color: #f0f0f0;
+  }
+  
+  .option-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .option-label {
+    font-weight: bold;
+  }
+  
+  .color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .color-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .color-option:hover {
+    transform: scale(1.1);
+  }
+  
+  .color-option.selected {
+    border: 2px solid #000;
+  }
+  
+  .size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .size-option {
+    padding: 8px 16px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .size-option:hover {
+    border-color: #000;
+  }
+  
+  .size-option.selected {
+    border-color: #000;
+    background-color: #000;
+    color: white;
+  }
+  
+  .finder-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .finder-button {
+    background-color: #000;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .finder-button:hover {
+    background-color: #333;
+  }
+  
+  .back-button {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    margin-right: 15px;
+  }
+  
+  .back-button:hover {
+    background-color: #f0f0f0;
+  }

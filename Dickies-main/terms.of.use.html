@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Хэрэглэгчийн Хуудас</title>
+  <link rel="stylesheet" href="terms.of.use.css">
+  <style>
+    body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.mainbar1{
+  background-color: white;
+  width: 100%;
+  padding-top: 130px;
+}
+.mainbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 20px;
+}
+
+.left-text {
+  font-weight: bold;
+}
+
+.left-text span {
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+.right-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.right-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.right-menu a:hover {
+  text-decoration: underline;
+}
+
+.flag {
+  width: 24px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;  
+}
+.test
+{
+    position: fixed;
+    width: 100%;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-left img {
+  height: 40px;
+}
+
+.nav-left a {
+  color: #111;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-left a.sale {
+  color: darkred;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.nav-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.help-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .help-section h2 {
+    margin-left: 20px;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .support-info {
+    display: flex;
+    gap: 40px;
+    padding: 10px 10px;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+  
+  .left-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
+  .help-table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #222;
+    margin-top: 20px;
+  }
+  
+  .help-table td {
+    padding: 10px;
+    vertical-align: top;
+  }
+  
+  .help-table a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .live-chat {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  
+  .help-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 30px;
+  }
+  
+  .help-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+  }
+  
+  .help-table img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .help-item p {
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+  }  
+
+.footer {
+background-color: #000000;
+color: #fff;
+padding: 60px 40px;
+font-family: 'Arial', sans-serif, 'Big Text';
+}
+
+.footer-top {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 40px;
+}
+
+.footer-logo {
+width: 100px;
+margin-bottom: 20px;
+}
+
+h3 {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.subscribe {
+display: flex;
+background-color: #222;
+border-radius: 4px;
+overflow: hidden;
+margin-bottom: 20px;
+}
+
+.subscribe input {
+border: none;
+padding: 10px;
+background: none;
+color: #fff;
+flex: 1;
+min-width: 280px;
+}
+
+.footer-medium{
+    padding-top: 180px;
+}
+.footer-medium1{
+    padding-top: 70px;
+}
+.subscribe button {
+padding: 10px 15px;
+background-color: #444;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+.social-icons i {
+font-size: 18px;
+margin-right: 10px;
+cursor: pointer;
+}
+
+.footer-columns {
+display: flex;
+gap: 60px;
+flex-wrap: wrap;
+}
+
+.footer-col h4 {
+font-size: 0.9rem;
+margin-bottom: 15px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.footer-col ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-col li {
+margin-bottom: 10px;
+font-size: 0.9rem;
+cursor: pointer;
+}
+.footer-brand{
+  margin-bottom: 12%;
+}
+.footer-bottom {
+display: flex;
+justify-content: space-between;
+margin-top: 40px;
+flex-wrap: wrap;
+font-size: 0.8rem;
+color: #aaa;
+}
+
+.footer-bottom a {
+color: #aaa;
+margin-left: 15px;
+text-decoration: underline;
+}
+.b-footer_top-title {
+font-size: 24px;
+font-weight: 700;
+letter-spacing: 0;
+line-height: 30px;
+font-family: "Big Text";
+max-width: 400px;
+margin-left: 53%;
+padding-top: 50px;
+}
+      
+  </style>
+</head>
+<body>
+<section class="test">
+  <header class="mainbar">
+    <div class="left-text">
+      2 for $25 <span><strong>Women's T-Shirts</strong> <a href="#" style="color: white; text-decoration: underline;">Shop Now</a></span>
+    </div>
+
+    <div class="right-menu">
+      <a href="#">📍 Find a Store</a>
+      <a href="#">👥 Dickies for Business</a>
+      <a href="#">💬 Live Chat</a>
+      <a href="#">❓ Help</a>
+      <a href="#">👤 Log In</a>
+      <a href="#">Join Us</a>
+      <img class="flag" src="/imgs/Flag_of_Mongolia.svg.png" alt="MGL Flag">
+    </div>
+  </header>   
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="/imgs/dickiesLogo-removebg-preview.png" alt="Dickies Logo"/>  
+      <a href="#"><b>Men</b></a>
+      <a href="#"><b>Women</b></a>
+      <a href="#"><b>Kids</b></a>
+      <a href="#"><b>Scrubs</b></a>
+      <a href="#" class="sale"><b>Sale</b></a>
+      <a href="#"><b>Pants Finder</b></a>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        🔍 <input type="text" placeholder="Search">
+      </div>
+      <div class="nav-icon">🔖</div>
+      <div class="nav-icon">🛒</div>
+    </div>
+  </nav>
+</section>
+  <main class="mainbar1">
+    <div class="container">
+          <aside class="sidebar">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <h3>Legal</h3>
+            <ul>
+              <li><a class="active" href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </aside>
+      
+          <main class="content">
+            <h1>Terms of Use</h1>
+            <p class="updated">Last Updated: February 24, 2025</p>
+            <p class="intro">
+                Last updated: February 26, 2025
+
+                Dickies®, a division of VF Outdoor, LLC and its affiliates in the United States (“Dickies” “us” or “we”), makes its websites, mobile applications, and online services accessible to you at www.dickies.com and applicable country top-level domains (including sub-domains associated with them) (individually or collectively, the “Website”). You are subject to the following Terms of Use. BY ACCESSING OR USING THE WEBSITE AND SERVICES IN ANY WAY OR BY AGREEING TO PROVIDE SUBMISSIONS TO DICKIES, YOU ARE AGREEING TO THE TERMS OF USE BELOW AS WELL AS THE THE PRIVACY POLICY. IN ADDITION, WHEN USING PARTICULAR PARTS OF THE WEBSITE SUCH AS SHOPPING, FORUMS, WATCHING VIDEOS, BLOGS OR THE LIKE, YOU AGREE TO ABIDE BY ANY APPLICABLE POSTED GUIDELINES FOR THOSE SERVICES. SHOULD YOU OBJECT TO ANY TERM OR CONDITION OF THE TERMS OF USE OR PRIVACY POLICY, YOU MAY NOT ACCESS OR USE THE WEBSITE AND YOU SHOULD NOT PROVIDE SUBMISSIONS TO DICKIES.
+                
+                PLEASE READ THESE TERMS OF USE CAREFULLY AS THEY CONTAIN IMPORTANT INFORMATION AFFECTING YOUR RIGHTS UNDER THESE TERMS OF USE. ANY DISPUTE BETWEEN YOU AND DICKIES IS SUBJECT TO A CLASS ACTION WAIVER, AND, EXCEPT FOR THOSE DISPUTES FILED IN SMALL CLAIMS COURT, MUST BE RESOLVED THROUGH ARBITRATION RATHER THAN IN COURT.
+                
+                DICKIES MAY AMEND THESE TERMS OF USE AT ANY TIME. ANY SUCH AMENDMENT WILL BE EFFECTIVE UPON THE EARLIER OF EITHER NOTICE TO YOU OR POSTING UPDATED TERMS TO THE WEBSITE UNLESS YOU OPT OUT FOLLOWING THE STEPS OUTLINED BELOW. YOUR CONTINUED USE OF THE WEBSITE CONSTITUTES YOUR ACCEPTANCE TO THE UPDATED TERMS OF USE. OUR CUSTOMER SERVICE REPRESENTATIVES ARE NOT AUTHORIZED TO MODIFY ANY PROVISION OF THESE TERMS OF USE, EITHER VERBALLY OR IN WRITING. YOU HAVE THE RIGHT TO OPT OUT OF ANY SUCH AMENDMENT BY PROVIDING US WITH WRITTEN NOTICE VIA USPS PRIORITY MAIL OR HAND DELIVERY WITHIN 30 DAYS OF THE AMENDMENT TO: DICKIES, A DIVISION OF VF OUTDOOR, LLC, ATTN: GENERAL COUNSEL, 1551 WEWATTA STREET, DENVER, CO 80202. TO BE EFFECTIVE, YOUR OPT-OUT NOTICE MUST BE TIMELY, SENT TO THIS ADDRESS, AND INCLUDE YOUR NAME, ADDRESS, AND THE SAME EMAIL ADDRESS USED TO CREATE AN ACCOUNT WITH US AND AN UNEQUIVOCAL STATEMENT THAT YOU WISH TO OPT OUT OF THE UPDATED TERMS OF USE. OPTING OUT OF AN AMENDMENT TO THE TERMS OF USE HAS NO EFFECT ON ANY OTHER AGREEMENTS THAT YOU CURRENTLY HAVE WITH US, INCLUDING ANY PRIOR TERMS OF USE AND OUR PRIVACY POLICY.
+                
+                DICKIES HAS THE RIGHT, BUT IS NOT OBLIGATED, TO STRICTLY ENFORCE THE TERMS OF USE THROUGH SELF-HELP, COMMUNITY MODERATION, ACTIVE INVESTIGATION, LITIGATION AND PROSECUTION.
+               
+             Dickies and the Dickies horseshoe logo are trademarks of W-D Apparel Company, LLC. © 2024 W-D Apparel Company, LLC. All rights reserved.
+             </p>
+    
+      
+            <div class="accordion">
+              <div class="accordion-item">
+                <button class="accordion-header">Trademark</button>
+                <div class="accordion-body">
+                  <p>Your use of trademarks must comply with ...</p>
+                </div>
+              </div>
+      
+              <div class="accordion-item">
+                <button class="accordion-header">User Content</button>
+                <div class="accordion-body">
+                  <p>Anything you post or submit is considered user content ...</p>
+                </div>
+              </div>
+      
+              <div class="accordion-item">
+                <button class="accordion-header">Disclaimer of Warranties</button>
+                <div class="accordion-body">
+                  <p>Content is provided “as is” with no warranties...</p>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">Feedback</button>
+                    <div class="accordion-body">
+                      <p>Content is provided “as is” with no warranties...</p>
+                    </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-header">Feedback and User Content</button>
+                <div class="accordion-body">
+                  <p>Content is provided “as is” with no warranties...</p>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">User Content</button>
+                    <div class="accordion-body">
+                      <p>Content is provided “as is” with no warranties...</p>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">Establishing an Account</button>
+                        <div class="accordion-body">
+                          <p>Content is provided “as is” with no warranties...</p>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">Availability of Products, Services, Features and Content</button>
+                            <div class="accordion-body">
+                              <p>Content is provided “as is” with no warranties...</p>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header">Accessing the Website and Account Security</button>
+                                <div class="accordion-body">
+                                  <p>Content is provided “as is” with no warranties...</p>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <button class="accordion-header">External Sites</button>
+                                    <div class="accordion-body">
+                                      <p>Content is provided “as is” with no warranties...</p>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-header">Mobile Services</button>
+                                        <div class="accordion-body">
+                                          <p>Content is provided “as is” with no warranties...</p>
+                                        </div>
+                                        
+                                        <div class="accordion-item">
+                                            <button class="accordion-header">copyright</button>
+                                            <div class="accordion-body">
+                                              <p>Content is provided “as is” with no warranties...</p>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <button class="accordion-header">Disclaimer of Warranties</button>
+                                                <div class="accordion-body">
+                                                  <p>Content is provided “as is” with no warranties...</p>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <button class="accordion-header">Limitation on Liability and Indemnity of Dickies</button>
+                                                    <div class="accordion-body">
+                                                      <p>Content is provided “as is” with no warranties...</p>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                        <button class="accordion-header">Compliance with Applicable Laws; Export Control Laws</button>
+                                                        <div class="accordion-body">
+                                                          <p>Content is provided “as is” with no warranties...</p>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <button class="accordion-header">Disputes and Arbitration Agreement</button>
+                                                            <div class="accordion-body">
+                                                              <p>Content is provided “as is” with no warranties...</p>
+                                                            </div>
+
+                                                            <div class="accordion-item">
+                                                                <button class="accordion-header">Termination</button>
+                                                                <div class="accordion-body">
+                                                                  <p>Content is provided “as is” with no warranties...</p>
+                                                                </div>
+
+                                                                <div class="accordion-item">
+                                                                    <button class="accordion-header">Governing Law; Entire Agreement</button>
+                                                                    <div class="accordion-body">
+                                                                      <p>Content is provided “as is” with no warranties...</p>
+                                                                    </div>
+
+                                                                    <div class="accordion-item">
+                                                                        <button class="accordion-header">Contact Us</button>
+                                                                        <div class="accordion-body">
+                                                                          <p>Content is provided “as is” with no warranties...</p>
+                                                                        </div>
+
+                                                                        <div class="accordion-item">
+                                                                            <button class="accordion-header">Accessibility</button>
+                                                                            <div class="accordion-body">
+                                                                              <p>Content is provided “as is” with no warranties...</p>
+                                                                            </div>
+
+                                                                            <div class="accordion-item">
+                                                                                <button class="accordion-header">Accessibility</button>
+                                                                                <div class="accordion-body">
+                                                                                  <p>Content is provided “as is” with no warranties...</p>
+                                                                                </div>
+
+        
+
+                                                        
+      
+              <!-- Add more items as needed -->
+            </div>
+          </main>
+        </div>
+      
+        <script>
+          const headers = document.querySelectorAll('.accordion-header');
+          headers.forEach(header => {
+            header.addEventListener('click', () => {
+              header.classList.toggle('active');
+              const body = header.nextElementSibling;
+              body.style.display = body.style.display === 'block' ? 'none' : 'block';
+            });
+          });
+        </script>
+  </main> 
+  
+  <section class="help-section">
+    <h2>Need Help?</h2>
+    
+    <div class="support-info">
+      <table class="help-table">
+        <tr>
+          <td>Monday to Friday</td>
+          <td><strong>1-800-Dickies (342-5437)</strong></td>
+        </tr>
+        <tr>
+          <td>8am - 6pm CT</td>
+          <td><a href="mailto:us_customer_care@dickies.com">us_customer_care@dickies.com</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Chat Available: 8:00am - 6pm CT Monday to Friday</td>
+        </tr>
+        <tr>
+          <td></td><td colspan="2">
+            <a href="#" class="live-chat">💬Live Chat</a>
+          </td>
+        </tr>
+      </table>
+      <table class="help-table">
+        <tr>
+          <td><img src="/imgs/mail.png" alt="Contact Icon"><p>Contact Us</p></td><td> <img src="/imgs/order.png" alt="Track Order"><p>Track Order</p></td><td><img src="/imgs/box.png" alt="Shipping"><p>Shipping & Returns</p></td><td><img src="/imgs/AQ.png" alt="FAQs"><p>FAQs</p></td>
+        </tr>
+      </table>
+    </div>    
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <h2 class="b-footer_top-title">Quality Workwear Since 1922</h2>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="/imgs/logo.jpg" alt="Dickies Logo" class="footer-logo" />
+        <h3>Stay Connected</h3>
+        <div class="subscribe">
+          <input type="email" placeholder="Email Address"/>
+          <button>&rarr;</button>
+        </div>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+  
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>COMPANY INFO</h4>
+          <ul>
+            <li>About Dickies</li>
+            <li>Media Inquiries</li>
+            <li>Careers</li>
+            <li>CA Supply Chains Act</li>
+            <p class="footer-medium">
+              📍Find a Store
+            </p>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>CUSTOMER SERVICE</h4>
+          <ul>
+            <li>💬 Live Chat</li>
+            <li>FAQ</li>
+            <li>Contact Us</li>
+            <li>Check Order Status</li>
+            <li>E-Gift Card</li>
+            <li>Coupons & Promotions</li>
+            <li>Returns</li>
+            <li>Shipping & Delivery</li>
+            <p class="footer-medium1">
+              👥Dickies for Business
+            </p>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>DICKIES STORIES</h4>
+          <ul>
+            <li>Skate</li>
+            <li>Ambassadors</li>
+            <li>Dickies Makers</li>
+            <li>Collaborations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-left">
+        ©2025 Williamson-Dickie Mfg., a VF Company Quality Workwear Since 1922
+      </div>
+      <div class="footer-right">
+        <a href="#">Accessibility Statement</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Your Privacy Choices</a>
+        <a href="#">Notice at Collection</a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
